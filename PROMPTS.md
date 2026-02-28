@@ -1,7 +1,7 @@
 # Prompts used for the Cloudflare AI Assignment
 
-**Prompt 1 (Ideation & Architecture):**
-"I need to build an AI-powered application for a Cloudflare internship assignment. It needs to use an LLM (Llama 3.3), a Workflow/Worker, User input (Pages), and Memory/State. I know React, HTML, CSS, JavaScript, and Java. Give me a simple but effective project idea and the architecture to build it."
+**Prompt 1 (Architecture & System Design):**
+"I am designing a technical interview bot (cf_ai_tech_interviewer) using Cloudflare Workers AI (Llama 3.3) as the backend and a React single-page application hosted on Cloudflare Pages as the frontend. Act as my sounding board: suggest a clean system architecture to handle CORS, stateless LLM requests, and the system prompt for the interviewer persona."
 
-**Prompt 2 (Setting up the Worker and AI Binding):**
-"I have created the GitHub repository. Now I need to set up the Cloudflare Worker that will act as the backend API to communicate with the Llama 3.3 model. How do I initialize the worker and bind the Cloudflare AI to it using the wrangler.toml file?"
+**Prompt 2 (Boilerplate Generation):**
+"Generate the boilerplate code for a Cloudflare Worker `index.js` using the new `wrangler.jsonc` configuration format. I need it to bind the `@cf/meta/llama-3.3-70b-instruct-fp8-fast` model. Set up a basic POST endpoint that receives a JSON payload `{"message": "..."}`, injects a system prompt, and returns the LLM's response. Ensure CORS headers are properly configured to allow requests from my local React dev server."
